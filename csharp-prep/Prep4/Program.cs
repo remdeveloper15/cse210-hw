@@ -63,5 +63,7 @@ class Program
         Console.WriteLine($"The sum is: {sum}");
         Console.WriteLine($"The avareage is: {ave}");
         Console.WriteLine($"The largest is: {max}");
+
+        //XD//
     }
 }
