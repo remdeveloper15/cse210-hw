@@ -1,0 +1,3 @@
+0
+0
+SimpleGoal:Miwa,Miwa es Aiko,100,False

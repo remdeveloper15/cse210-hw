@@ -1,4 +1,6 @@
 
+using System.ComponentModel;
+
 public class Goal
 {
     private string _shortName;
@@ -12,8 +14,20 @@ public class Goal
         _points = points;
     }
 
+    public Goal()
+    {
+        
+    }
+
+    public string GetPoints()
+    {
+        return _points;
+    }
+
     public virtual void RecordEvent()
     {
+        Console.WriteLine($"You have earned {_points} points!");
+        Console.WriteLine("");
     }
     
     public virtual bool IsComplete()

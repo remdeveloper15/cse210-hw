@@ -4,10 +4,13 @@ public class GoalManager
 {
     private List<Goal> _goals = new List<Goal>();
     private int _score = 0;
-
     public GoalManager()
     {
+    }
 
+    public int GetScore()
+    {
+        return _score;
     }
 
     public void Start()
@@ -62,7 +65,10 @@ public class GoalManager
 
     public void DisplayPlayerInfo()
     {
-        Console.WriteLine($"You have {_score} points");
+        Goal goal = new Goal();
+        string finalScoreString = goal.GetPoints();
+        Console.WriteLine(finalScoreString);
+        Console.WriteLine($"You have points");
     }
 
     public void ListGoalNames()
@@ -158,8 +164,19 @@ public class GoalManager
 
     public void RecordEvent()
     {
-        Console.WriteLine("Which goal would you like to acomplish? ");
-        RecordEvent();
+        int index;
+        Console.Write("Which goal would you like to acomplish? ");
+        string userOption3String = Console.ReadLine();
+        int userOption3 = int.Parse(userOption3String);
+        userOption3 = userOption3 + 1;
+
+        foreach (Goal goal in _goals)
+        {
+            index = _goals.IndexOf(goal);
+            goal.RecordEvent();
+
+        }
+
     }
 
     public void SaveGoals()

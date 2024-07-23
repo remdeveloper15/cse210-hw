@@ -9,9 +9,7 @@ public class SimpleGoal : Goal
 
     public override void RecordEvent()
     {
-        Console.WriteLine($"You have earned {_points} points!");
-        Console.WriteLine("");
-
+        base.RecordEvent();
     }
 
     public override bool IsComplete()
