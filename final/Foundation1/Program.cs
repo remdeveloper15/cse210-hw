@@ -46,9 +46,9 @@ class Program
         Comment comment43 = new Comment("Aldoxito", "La naturaleza es tan hermosa, igual de hermosa que soy yo");
         Comment comment44 = new Comment("Luluking", "Awsome!");
 
-        video3.AddComment(comment31);
-        video3.AddComment(comment32);
-        video3.AddComment(comment33);
+        video3.AddComment(comment41);
+        video3.AddComment(comment42);
+        video3.AddComment(comment43);
         video3.AddComment(comment44);
 
         _videos.Add(video);
